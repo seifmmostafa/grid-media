@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرض أعمالنا | جريد ميديا برودكشن — إنتاج سينمائي وبصري</title>
+  <meta name="description" content="استعرض أهم أعمال ومشاريع جريد ميديا برودكشن: فيديوهات سينمائية، تغطية فعاليات، إعلانات تجارية، وحفلات تخرج بمستوى إنتاج احترافي." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Grid.png" alt="جريد ميديا برودكشن" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="index.html#about" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="index.html#services" class="nav-link" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+        <li><a href="index.html#process" class="nav-link" data-ar="مراحل العمل" data-en="Our Process">مراحل العمل</a></li>
+        <li><a href="portfolio.html" class="nav-link active nav-highlight" data-ar="أعمالنا 🎬" data-en="Our Work 🎬">أعمالنا 🎬</a></li>
+        <li><a href="index.html#contact" class="nav-cta" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language" title="Switch to English">
+          <svg class="lang-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 3C12 3 9 7 9 12C9 17 12 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M12 3C12 3 15 7 15 12C15 17 12 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3.5 9H20.5M3.5 15H20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="lang-label" id="langLabel">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="قائمة التنقل">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Portfolio Hero Section -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span id="portfolioBadgeText">معرض الأعمال السينمائية</span>
+      </div>
+      <h1 class="section-title" id="portfolioHeroTitle">
+        نصنع الصورة ونروي القصة... <span class="text-gold">أعمال تتحدث عن نفسها</span>
+      </h1>
+      <p class="section-desc" id="portfolioHeroDesc">
+        مجموعة مختارة من أبرز مشاريعنا في إنتاج الفيديو السينمائي، تغطيات الفعاليات الكبرى، الإعلانات التجارية، وحفلات التخرج لشركاء نجاحنا في مصر.
+      </p>
+
+      <div class="portfolio-stats-bar">
+        <div class="portfolio-stat-pill">
+          <span>🎬</span>
+          <span id="statProjectsText">10 أعمال سينمائية مختارة</span>
+        </div>
+        <div class="portfolio-stat-pill">
+          <span>📍</span>
+          <span id="statCitiesText">10+ مدن في أنحاء مصر</span>
+        </div>
+        <div class="portfolio-stat-pill">
+          <span>✨</span>
+          <span id="statQualityText">100% جودة وإنتاج سينمائي</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="portfolio-filter-section">
+    <div class="container">
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all" data-ar="جميع الأعمال (10)" data-en="All Projects (10)">جميع الأعمال (10)</button>
+        <button class="filter-btn" data-filter="graduation" data-ar="حفلات تخرج" data-en="Graduation Ceremonies">حفلات تخرج</button>
+        <button class="filter-btn" data-filter="events" data-ar="فعاليات ومناسبات" data-en="Events & Occasions">فعاليات ومناسبات</button>
+        <button class="filter-btn" data-filter="brands" data-ar="إعلانات وبراندات" data-en="Commercials & Brands">إعلانات وبراندات</button>
+        <button class="filter-btn" data-filter="cinematic" data-ar="إنتاج سينمائي" data-en="Cinematic Production">إنتاج سينمائي</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="portfolio-showcase">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-category="cinematic" data-index="0">
+          <a href="https://www.instagram.com/seif_filmmaker/reel/DEk2FchSjdp/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_1.jpg" alt="فيلم قصير وإخراج سينمائي إبداعي" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@seif_filmmaker</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-0">إنتاج سينمائي</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/seif_filmmaker/reel/DEk2FchSjdp/" target="_blank" rel="noopener noreferrer" id="card-title-0">إخراج وإنتاج سينمائي إبداعي — فيلم قصير</a>
+            </h3>
+            <p class="project-desc" id="card-desc-0">رؤية إخراجية سينمائية متقدمة للمخرج سيف الدين بالتعاون مع Sola Studio، تبرز قوة زوايا الكاميرا والإضاءة والدراما البصرية.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/seif_filmmaker/reel/DEk2FchSjdp/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-0">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/seif_filmmaker/reel/DEk2FchSjdp/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="graduation" data-index="1">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DdRzTD8Bt7s/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_2.jpg" alt="حفل تخرج تجارة بنات جامعة الأزهر بأسيوط" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-1">حفلات تخرج</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DdRzTD8Bt7s/" target="_blank" rel="noopener noreferrer" id="card-title-1">حفل تخرج تجارة بنات جامعة الأزهر بأسيوط</a>
+            </h3>
+            <p class="project-desc" id="card-desc-1">«صار حقاً حلمنا.. بعد صبرٍ جاءنا».. توثيق مشاعر الفرح وطاقة الاحتفال لدفعة استثنائية بتنظيم CRC Event.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DdRzTD8Bt7s/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-1">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DdRzTD8Bt7s/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="graduation" data-index="2">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DdJx5yytzpq/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_3.jpg" alt="حفل تخرج كلية الفنون الجميلة" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-2">حفلات تخرج</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DdJx5yytzpq/" target="_blank" rel="noopener noreferrer" id="card-title-2">حفل تخرج كلية الفنون الجميلة</a>
+            </h3>
+            <p class="project-desc" id="card-desc-2">احتفال فني نابض بالحياة يوثق بهجة خريجي كلية الفنون الجميلة بطاقة شبابية وتفاصيل بصرية بديعة.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DdJx5yytzpq/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-2">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DdJx5yytzpq/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="events" data-index="3">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DbV_NgjNUt7/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_4.jpg" alt="تغطية ومونتاج سينمائي فوري في نفس اليوم" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-3">فعاليات ومناسبات</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DbV_NgjNUt7/" target="_blank" rel="noopener noreferrer" id="card-title-3">تغطية ومونتاج سينمائي فوري في نفس اليوم (Same Day Edit)</a>
+            </h3>
+            <p class="project-desc" id="card-desc-3">سرعة واحترافية فائقة في توثيق الفعالية ومونتاجها وعرض النتيجة في نفس اليوم بأعلى المعايير البصرية.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DbV_NgjNUt7/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-3">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DbV_NgjNUt7/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="graduation" data-index="4">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DaDMsTfN8F0/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_5.jpg" alt="حفل تخرج كلية طب الأسنان — جامعة دراية" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-4">حفلات تخرج</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DaDMsTfN8F0/" target="_blank" rel="noopener noreferrer" id="card-title-4">حفل تخرج كلية طب الأسنان — جامعة دراية</a>
+            </h3>
+            <p class="project-desc" id="card-desc-4">توثيق أسطوري لواحدة من أبهج حفلات التخرج مع تفاعل حي وطاقة شبابية مفعمة بالفرح والإنجاز.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DaDMsTfN8F0/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-4">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DaDMsTfN8F0/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="graduation" data-index="5">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DVMFsjigp5b/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_6.jpg" alt="حفلة كلية الطب الرسمية — جامعة أسيوط" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-5">حفلات تخرج</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DVMFsjigp5b/" target="_blank" rel="noopener noreferrer" id="card-title-5">حفلة كلية الطب الرسمية — جامعة أسيوط</a>
+            </h3>
+            <p class="project-desc" id="card-desc-5">إنتاج بصري راقٍ يوثق لحظات الفخر والاعتزاز لأطباء المستقبل في صرح جامعة أسيوط العريق.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DVMFsjigp5b/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-5">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DVMFsjigp5b/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card" data-category="cinematic" data-index="6">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DKf4-2cIZ6j/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_7.jpg" alt="إنتاج بصري إبداعي بالتعاون مع MS Company" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-6">إنتاج سينمائي</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DKf4-2cIZ6j/" target="_blank" rel="noopener noreferrer" id="card-title-6">إنتاج بصري إبداعي بالتعاون مع MS Company</a>
+            </h3>
+            <p class="project-desc" id="card-desc-6">إيقاع سريع وتناغم بصري استعراضي يجمع بين فن المونتاج والتصوير الاحترافي لإبهار الجمهور.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DKf4-2cIZ6j/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-6">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DKf4-2cIZ6j/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-card" data-category="events" data-index="7">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DRDT1XaDd6J/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_8.jpg" alt="أجواء استعراضية وأضواء حية في فعالية جماهيرية" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-7">فعاليات ومناسبات</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DRDT1XaDd6J/" target="_blank" rel="noopener noreferrer" id="card-title-7">أجواء استعراضية وأضواء حية في فعالية جماهيرية</a>
+            </h3>
+            <p class="project-desc" id="card-desc-7">لقطات استعراضية بزوايا سينمائية ترصد الأزياء المبتكرة والإضاءة المسرحية والطاقة الحماسية للحضور.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DRDT1XaDd6J/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-7">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DRDT1XaDd6J/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 9 -->
+        <article class="project-card" data-category="brands" data-index="8">
+          <a href="https://www.instagram.com/assiutcement/reel/DYCzzz-Mfmm/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_9.jpg" alt="تغطية ملتقى الأعمال بفندق أسمنت أسيوط مع صلاح أبو المجد" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@assiutcement</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-8">إعلانات وبراندات</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/assiutcement/reel/DYCzzz-Mfmm/" target="_blank" rel="noopener noreferrer" id="card-title-8">تغطية ملتقى الأعمال بفندق أسمنت أسيوط مع صلاح أبو المجد</a>
+            </h3>
+            <p class="project-desc" id="card-desc-8">إنتاج مؤسسي ضخم يوثق أكبر حدث لرواد الأعمال في صعيد مصر مع صلاح أبو المجد وتنظيم Educon Academy.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/assiutcement/reel/DYCzzz-Mfmm/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-8">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/assiutcement/reel/DYCzzz-Mfmm/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 10 -->
+        <article class="project-card" data-category="brands" data-index="9">
+          <a href="https://www.instagram.com/_gridmedia_/reel/DKR7rvaoBLW/" target="_blank" rel="noopener noreferrer" class="project-thumb-link" title="مشاهدة على إنستجرام">
+            <div class="project-thumb">
+              <img src="thumbs/reel_10.jpg" alt="إعلان تجاري واستعراض براند Sonic Store" class="project-thumb-img" loading="lazy" />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-grid-pattern"></div>
+              <div class="thumb-reel-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Reel</span>
+              </div>
+              <div class="play-btn-wrapper">
+                <div class="play-btn-circle" title="مشاهدة على إنستجرام">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="thumb-account-badge">@_gridmedia_</div>
+            </div>
+          </a>
+          <div class="project-content">
+            <div class="project-cat" id="card-cat-9">إعلانات وبراندات</div>
+            <h3 class="project-title">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DKR7rvaoBLW/" target="_blank" rel="noopener noreferrer" id="card-title-9">إعلان تجاري واستعراض براند Sonic Store</a>
+            </h3>
+            <p class="project-desc" id="card-desc-9">محتوى ترويجي سينمائي يستعرض منتجات وهوية متجر Sonic Store بجاذبية تسويقية واحترافية عالية.</p>
+            <div class="project-card-footer">
+              <a href="https://www.instagram.com/_gridmedia_/reel/DKR7rvaoBLW/" target="_blank" rel="noopener noreferrer" class="btn-watch-reel">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="card-btn-text-9">مشاهدة على إنستجرام</span>
+                <svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.instagram.com/_gridmedia_/reel/DKR7rvaoBLW/" target="_blank" rel="noopener noreferrer" class="btn-open-direct" title="فتح على إنستجرام">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="container">
+    <div class="portfolio-cta">
+      <div class="portfolio-cta-glow"></div>
+      <h2 class="section-title" id="ctaTitle">معجب بأعمالنا؟ <span class="text-gold">جاهز لتنفيذ مشروعك؟</span></h2>
+      <p class="section-desc" id="ctaDesc">تواصل معنا الآن ودعنا نناقش فكرتك ونحولها لتجربة بصرية استثنائية.</p>
+      <div class="portfolio-cta-actions">
+        <a href="https://wa.me/201147670788" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span id="ctaWhatsappText">تواصل عبر واتساب</span>
+        </a>
+        <a href="index.html#contact" class="btn-ghost">
+          <span id="ctaQuoteText">اطلب عرض سعر لمشروعك</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Grid.png" alt="جريد ميديا برودكشن" class="footer-logo" />
+          <p class="footer-tagline" id="footerTagline">صناعة محتوى بصري. إنتاج إبداعي. وتجربة متكاملة من الفكرة حتى الصورة النهائية.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/201147670788" target="_blank" rel="noopener noreferrer" class="social-link social-whatsapp" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/_gridmedia_" target="_blank" rel="noopener noreferrer" class="social-link social-instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61576882616830" target="_blank" rel="noopener noreferrer" class="social-link social-facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@gridmediaa" target="_blank" rel="noopener noreferrer" class="social-link social-tiktok" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4 id="footerLinksTitle">روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index.html#about">من نحن</a></li>
+            <li><a href="index.html#services">خدماتنا</a></li>
+            <li><a href="index.html#process">مراحل العمل</a></li>
+            <li><a href="portfolio.html">معرض أعمالنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4 id="footerServicesTitle">خدماتنا</h4>
+          <ul>
+            <li><a href="index.html#services">الفعاليات والمناسبات</a></li>
+            <li><a href="index.html#services">حفلات التخرج</a></li>
+            <li><a href="index.html#services">المحتوى الإعلاني</a></li>
+            <li><a href="index.html#services">محتوى الشركات</a></li>
+            <li><a href="index.html#services">إنتاج مخصص</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" id="footerCopy">© 2024 جريد ميديا برودكشن. جميع الحقوق محفوظة.</p>
+        <p class="footer-founder" id="footerFounder">المؤسس والرئيس التنفيذي — <strong>سيف الدين مؤمن</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/201147670788" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip" id="whatsappTooltip">تواصل معنا</span>
+  </a>
+
+  <!-- Floating Social Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://wa.me/201147670788" target="_blank" rel="noopener noreferrer" class="sidebar-social sidebar-whatsapp" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/_gridmedia_" target="_blank" rel="noopener noreferrer" class="sidebar-social sidebar-instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61576882616830" target="_blank" rel="noopener noreferrer" class="sidebar-social sidebar-facebook" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@gridmediaa" target="_blank" rel="noopener noreferrer" class="sidebar-social sidebar-tiktok" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+    </a>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>

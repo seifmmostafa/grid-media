@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جريد ميديا برودكشن | صناعة المحتوى البصري والإنتاج الإبداعي</title>
+  <meta name="description" content="جريد ميديا برودكشن — شركة متخصصة في إنتاج المحتوى البصري وصناعة الفيديو وتغطية الفعاليات. نحوّل الأفكار إلى تجربة بصرية متكاملة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="Grid.png" alt="Grid Media Productions" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="#services" class="nav-link" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+        <li><a href="#process" class="nav-link" data-ar="مراحل العمل" data-en="Our Process">مراحل العمل</a></li>
+        <li><a href="portfolio.html" class="nav-link nav-highlight" data-ar="أعمالنا 🎬" data-en="Our Work 🎬">أعمالنا 🎬</a></li>
+        <li><a href="#why" class="nav-link" data-ar="لماذا جريد؟" data-en="Why Grid?">لماذا جريد؟</a></li>
+        <li><a href="#cities" class="nav-link" data-ar="انتشارنا" data-en="Our Reach">انتشارنا</a></li>
+        <li><a href="#contact" class="nav-cta" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language" title="Switch to English">
+          <svg class="lang-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 3C12 3 9 7 9 12C9 17 12 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M12 3C12 3 15 7 15 12C15 17 12 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3.5 9H20.5M3.5 15H20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="lang-label" id="langLabel">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="قائمة التنقل">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="hero_bg.jpg" alt="" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-wrapper">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span><span id="heroBadgeText">إنتاج إبداعي متكامل</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" id="heroTitle1">نصنع الصورة</span>
+        <span class="title-sep">...</span>
+        <span class="title-line gold" id="heroTitle2">ونحوّل الأفكار</span>
+        <span class="title-line" id="heroTitle3">إلى تجربة بصرية</span>
+      </h1>
+      <p class="hero-sub" id="heroSub">من أول تواصل العميل معانا، بنبدأ نفهم احتياجاته، ونساعده يحدد الحل المناسب، ونخطط للتنفيذ، وننتج المحتوى، وبعدها نراجع النتيجة معاه.</p>
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn-primary" id="hero-portfolio-btn"><span data-ar="🎬 شاهد أعمالنا" data-en="🎬 View Our Work">🎬 شاهد أعمالنا</span></a>
+        <a href="#contact" class="btn-ghost" id="hero-cta"><span id="heroCta1">ابدأ مشروعك</span></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-num" id="stat1Num">10+</span><span class="stat-label" id="stat1Label">مدن في مصر</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num" id="stat2Num">5+</span><span class="stat-label" id="stat2Label">خدمات متكاملة</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num" id="stat3Num">7</span><span class="stat-label" id="stat3Label">مراحل تنفيذ</span></div>
+      </div>
+    </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="انزل للأسفل"><span class="scroll-line"></span><span class="scroll-text" id="heroScrollText">اكتشف المزيد</span></a>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-big">
+            <div class="card-accent-line"></div>
+            <img src="Grid.png" alt="جريد ميديا برودكشن" class="about-logo-large" />
+            <div class="card-glow"></div>
+          </div>
+          <div class="about-float-card">
+            <span class="float-icon">🎬</span>
+            <div><p class="float-title" id="floatTitle1">إنتاج سينمائي</p><p class="float-sub" id="floatSub1">محتوى بصري احترافي</p></div>
+          </div>
+          <div class="about-float-card card-2">
+            <span class="float-icon">✨</span>
+            <div><p class="float-title" id="floatTitle2">هوية مخصصة</p><p class="float-sub" id="floatSub2">لكل مشروع أسلوبه</p></div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label" id="aboutLabel">من نحن</div>
+          <h2 class="section-title" id="aboutTitle">شركة متخصصة في <span class="text-gold">إنتاج المحتوى البصري</span></h2>
+          <p class="about-text" id="aboutText1"><strong>جريد ميديا برودكشن</strong> هي شركة متخصصة في إنتاج المحتوى البصري وصناعة الفيديو وتغطية وتنفيذ الفعاليات والمشروعات المختلفة.</p>
+          <p class="about-text" id="aboutText2">بنقدم محتوى بصري احترافي وسينمائي، بيتم تصميمه وتنفيذه حسب طبيعة كل مشروع واحتياجات كل عميل.</p>
+          <div class="about-quote">
+            <span class="quote-mark">"</span>
+            <p id="aboutQuote">إحنا مش بنصور وخلاص... إحنا بنفهم الفكرة، ونبني عليها الصورة.</p>
+          </div>
+          <div class="about-founder">
+            <div class="founder-avatar"><span>س</span></div>
+            <div><p class="founder-name" id="founderName">سيف الدين مؤمن</p><p class="founder-title" id="founderTitle">المؤسس والرئيس التنفيذي</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" id="servicesLabel">ماذا نقدم</div>
+        <h2 class="section-title" id="servicesTitle">حلول متكاملة في <span class="text-gold">الإنتاج البصري</span></h2>
+        <p class="section-desc" id="servicesDesc">بنقدم حلول تناسب أنواع مختلفة من المشاريع والفعاليات</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="svc-1">
+          <div class="service-num">01</div>
+          <h3 class="service-title" id="svc1Title">الفعاليات والمناسبات</h3>
+          <p class="service-desc" id="svc1Desc">تغطية وإنتاج محتوى بصري للفعاليات، الحفلات، المؤتمرات، والمناسبات المختلفة، مع التركيز على تفاصيل الحدث وأجوائه وروحه.</p>
+          <div class="service-tag" id="svc1Tag">تغطية شاملة</div>
+        </div>
+        <div class="service-card" id="svc-2">
+          <div class="service-num">02</div>
+          <h3 class="service-title" id="svc2Title">حفلات التخرج والاحتفالات</h3>
+          <p class="service-desc" id="svc2Desc">إنتاج محتوى بصري يعكس أجواء الاحتفال والطاقة واللحظات المهمة، بداية من التصوير وحتى إنتاج المحتوى النهائي.</p>
+          <div class="service-tag" id="svc2Tag">لحظات لا تُنسى</div>
+        </div>
+        <div class="service-card" id="svc-3">
+          <div class="service-num">03</div>
+          <h3 class="service-title" id="svc3Title">المحتوى الإعلاني والترويجي</h3>
+          <p class="service-desc" id="svc3Desc">إنتاج فيديوهات ومحتوى بصري للشركات، البراندات، الأماكن والمشروعات، بهدف تقديمها بصورة جذابة واحترافية تخدم أهدافها.</p>
+          <div class="service-tag" id="svc3Tag">إعلان احترافي</div>
+        </div>
+        <div class="service-card" id="svc-4">
+          <div class="service-num">04</div>
+          <h3 class="service-title" id="svc4Title">محتوى الشركات والبراندات</h3>
+          <p class="service-desc" id="svc4Desc">صناعة محتوى بصري يساعد الشركات والبراندات على تقديم نفسها وهويتها بصورة واضحة واحترافية تعكس قيمتها.</p>
+          <div class="service-tag" id="svc4Tag">هوية بصرية</div>
+        </div>
+        <div class="service-card service-card-wide" id="svc-5">
+          <div class="service-num">05</div>
+          <h3 class="service-title" id="svc5Title">إنتاج المحتوى البصري المخصص</h3>
+          <p class="service-desc" id="svc5Desc">تنفيذ مشاريع محتوى مخصصة حسب احتياجات العميل، بداية من الفكرة والتخطيط، مرورًا بالتصوير والإنتاج، وحتى التسليم النهائي. كل مشروع له أسلوبه وهويته الخاصة.</p>
+          <div class="service-tag" id="svc5Tag">من الفكرة للصورة</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="process" id="process">
+    <div class="process-bg-text">GRID</div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" id="processLabel">كيف نعمل</div>
+        <h2 class="section-title" id="processTitle">مراحل العمل <span class="text-gold">السبع</span></h2>
+        <p class="section-desc" id="processDesc">كل مشروع مختلف، وعملنا يبدأ دائمًا بفهم العميل أولاً</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step" id="step-1">
+          <div class="step-number"><span>01</span></div>
+          <div class="step-content">
+            <div class="step-header"><div class="step-icon">🎯</div><h3 class="step-title" id="step1Title">فهم المشروع</h3></div>
+            <p class="step-desc" id="step1Desc">أول خطوة هي التواصل مع العميل وفهم تفاصيل المشروع. بنعرف طبيعة المشروع، أهدافه، متطلباته، المواعيد، والنتيجة اللي العميل عايز يوصل لها.</p>
+            <div class="step-highlight" id="step1High">نفهم رؤية العميل قبل أي خطوة في التنفيذ</div>
+          </div>
+        </div>
+        <div class="process-step step-alt" id="step-2">
+          <div class="step-number"><span>02</span></div>
+          <div class="step-content">
+            <div class="step-header"><div class="step-icon">💡</div><h3 class="step-title" id="step2Title">الاستشارة واختيار الحل</h3></div>
+            <p class="step-desc" id="step2Desc">بعد ما نفهم احتياجات العميل، بنساعده في تحديد الخدمات والباقة المناسبة للمشروع. مش بنعتمد على باقة ثابتة لكل الناس.</p>
+            <div class="step-highlight" id="step2High">حل مخصص لكل مشروع</div>
+          </div>
+        </div>
+        <div class="process-step" id="step-3">
+          <div class="step-number"><span>03</span></div>
+          <div class="step-content">
+            <div class="step-header"><div class="step-icon">📋</div><h3 class="step-title" id="step3Title">التخطيط وتحديد التكلفة</h3></div>
+            <p class="step-desc" id="step3Desc">بنراجع كل تفاصيل المشروع ونحدد نطاق العمل، وطريقة التنفيذ، والمخرجات المطلوبة. وبناءً على ده بنحدد التكلفة المناسبة.</p>
+            <div class="step-highlight" id="step3High">شفافية كاملة في التسعير</div>
+          </div>
+        </div>
+        <div class="process-step step-alt" id="step-4">
+          <div class="step-number"><span>04</span></div>
+          <div class="step-content">
+            <div class="step-header"><div class="step-icon">⚙️</div><h3 class="step-title" id="step4Title">التجهيز قبل التنفيذ</h3></div>
+            <p class="step-desc" id="step4Desc">قبل بداية التصوير، بنبدأ مرحلة التجهيز والتخطيط. بنراجع تفاصيل المشروع، ونحدد طريقة العمل والتصوير.</p>
+            <div class="step-highlight" id="step4High">نبدأ التنفيذ وإحنا عارفين بالضبط هدفنا</div>
+          </div>
+        </div>
+        <div class="process-step" id="step-5">
+          <div class="step-number"><span>05</span></div>
+          <div class="step-content">
+            <div class="step-header"><div class="step-icon">🎬</div><h3 class="step-title" id="step5Title">التنفيذ والإنتاج</h3></div>
+            <p class="step-desc" id="step5Desc">بنركز على القصة، التفاصيل، الطاقة، الأجواء، وطريقة تقديم الصورة، علشان النتيجة النهائية تكون تجربة بصرية متكاملة.</p>
+            <div class="step-highlight" id="step5High">محتوى بصري له قيمة وتأثير</div>
+          </div>
+        </div>
+        <div class="process-step step-alt" id="step-6">
+          <div class="step-number"><span>06</span></div>
+          <div class="step-content">
+            <div class="step-header"><div class="step-icon">🎨</div><h3 class="step-title" id="step6Title">ما بعد الإنتاج</h3></div>
+            <p class="step-desc" id="step6Desc">بعد انتهاء التصوير، يبدأ العمل على المادة المصورة.</p>
+            <div class="post-tags">
+              <span class="post-tag">المونتاج</span>
+              <span class="post-tag">تصحيح الألوان</span>
+              <span class="post-tag">تصميم الصوت</span>
+              <span class="post-tag">المؤثرات البصرية</span>
+              <span class="post-tag">الجرافيك والحركة</span>
+            </div>
+            <div class="step-highlight" id="step6High">لكل مشروع أسلوبه وهويته الخاصة</div>
+          </div>
+        </div>
+        <div class="process-step" id="step-7">
+          <div class="step-number"><span>07</span></div>
+          <div class="step-content">
+            <div class="step-header"><div class="step-icon">✅</div><h3 class="step-title" id="step7Title">المراجعة والتسليم النهائي</h3></div>
+            <p class="step-desc" id="step7Desc">قبل التسليم النهائي، بنتابع مع العميل ونتأكد إن النتيجة ماشية في الاتجاه اللي هو محتاجه.</p>
+            <div class="step-highlight" id="step7High">شغل يمثلك، يخدم هدفك، بالمستوى اللي كنا مستهدفينه</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content">
+          <div class="section-label" id="whyLabel">لماذا جريد؟</div>
+          <h2 class="section-title" id="whyTitle">مش مجرد فريق تصوير — <span class="text-gold">تجربة إنتاج متكاملة</span></h2>
+          <p class="why-text" id="whyText">إحنا بنتعامل مع كل مشروع كـ <strong>تجربة إنتاج متكاملة</strong>. من أول تواصل العميل معانا، بنبدأ نفهم احتياجاته، ونساعده يحدد الحل المناسب، ونخطط للتنفيذ، وننتج المحتوى.</p>
+          <div class="why-points">
+            <div class="why-point" id="wp-1"><div class="why-point-icon">🎯</div><div><h4 id="wp1Title">نفهم المشروع أولاً</h4><p id="wp1Desc">بنبدأ بفهم رؤيتك وأهدافك قبل أي خطوة تنفيذية</p></div></div>
+            <div class="why-point" id="wp-2"><div class="why-point-icon">🔧</div><div><h4 id="wp2Title">حلول مخصصة وليست باقات ثابتة</h4><p id="wp2Desc">كل مشروع بياخد الحل اللي يناسبه فعلاً</p></div></div>
+            <div class="why-point" id="wp-3"><div class="why-point-icon">🌟</div><div><h4 id="wp3Title">جودة سينمائية في كل مشروع</h4><p id="wp3Desc">محتوى بصري يعبر عن المشروع بشكل يحقق الهدف</p></div></div>
+            <div class="why-point" id="wp-4"><div class="why-point-icon">🤝</div><div><h4 id="wp4Title">شراكة حقيقية مع العميل</h4><p id="wp4Desc">بنراجع النتيجة معاك ونضمن رضاك الكامل</p></div></div>
+          </div>
+        </div>
+        <div class="why-visual">
+          <div class="philosophy-card">
+            <div class="phi-quote-mark">"</div>
+            <p class="phi-text" id="phiText">مش كل مشروع شبه التاني. ومش كل قصة ينفع تتحكي بنفس الطريقة.</p>
+            <div class="phi-divider"></div>
+            <p class="phi-sub" id="phiSub">علشان كده، إحنا مش بنحاول نكرر نفس الشغل في كل مرة. بنبدأ من احتياجات المشروع نفسه، وبعدها بنبني طريقة الإنتاج المناسبة له.</p>
+            <div class="phi-result"><span class="phi-icon">🏆</span><span id="phiResult">النجاح إن النتيجة تحقق الهدف وتوصل الإحساس</span></div>
+          </div>
+          <div class="big-tagline">
+            <span class="tagline-line" id="tagline1">كل مشروع</span>
+            <span class="tagline-line gold" id="tagline2">بيبدأ بفكرة.</span>
+            <span class="tagline-line" id="tagline3">إحنا بنحوّلها</span>
+            <span class="tagline-line gold" id="tagline4">لتجربة بصرية.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cities" id="cities">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" id="citiesLabel">خبرتنا وانتشارنا</div>
+        <h2 class="section-title" id="citiesTitle">نعمل في <span class="text-gold">أكثر من ١٠ مدن</span> في مصر</h2>
+        <p class="section-desc" id="citiesDesc">والانتشار في مناطق مختلفة خلانا نتعامل مع أنواع متعددة من المشاريع والعملاء</p>
+      </div>
+      <div class="cities-wrap">
+        <div class="cities-list">
+          <div class="city-pill gold" id="city-cairo">🌆 القاهرة</div>
+          <div class="city-pill" id="city-asyut">🏛️ أسيوط</div>
+          <div class="city-pill" id="city-sohag">🌿 سوهاج</div>
+          <div class="city-pill" id="city-minya">🌅 المنيا</div>
+          <div class="city-pill" id="city-luxor">🏛️ الأقصر</div>
+          <div class="city-pill" id="city-aswan">☀️ أسوان</div>
+          <div class="city-pill" id="city-hurghada">🌊 الغردقة</div>
+          <div class="city-pill" id="city-marsa">🐠 مرسى علم</div>
+          <div class="city-pill" id="city-sharm">🏔️ شرم الشيخ</div>
+          <div class="city-pill" id="city-arish">🌴 العريش</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="contact-bg"></div>
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-label" id="contactLabel">تواصل معنا</div>
+        <h2 class="contact-title" id="contactTitle">جاهز تبدأ <span class="text-gold">مشروعك؟</span></h2>
+        <p class="contact-sub" id="contactSub">تواصل معانا وهنبدأ بفهم احتياجاتك وتحديد الحل المناسب لمشروعك</p>
+        <div class="contact-card">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" id="nameLabel">الاسم</label>
+                <input type="text" id="name" name="name" placeholder="اسمك الكريم" required />
+              </div>
+              <div class="form-group">
+                <label for="phone" id="phoneLabel">رقم التواصل</label>
+                <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="project-type" id="projectLabel">نوع المشروع</label>
+              <select id="project-type" name="project-type" required>
+                <option value="" disabled selected>اختار نوع المشروع</option>
+                <option value="event">فعاليات ومناسبات</option>
+                <option value="graduation">حفلات تخرج</option>
+                <option value="ad">محتوى إعلاني وترويجي</option>
+                <option value="brand">محتوى الشركات والبراندات</option>
+                <option value="custom">إنتاج محتوى مخصص</option>
+                <option value="other">أخرى</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" id="msgLabel">تفاصيل المشروع</label>
+              <textarea id="message" name="message" rows="4" placeholder="أخبرنا أكثر عن مشروعك..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submit-btn">
+              <span id="submitBtnText">أرسل طلبك</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✅</div>
+            <h3 id="successTitle">تم إرسال طلبك!</h3>
+            <p id="successMsg">سنتواصل معك في أقرب وقت ممكن لبدء رحلة مشروعك.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Grid.png" alt="جريد ميديا برودكشن" class="footer-logo" />
+          <p class="footer-tagline" id="footerTagline">صناعة محتوى بصري. إنتاج إبداعي. وتجربة متكاملة من الفكرة حتى الصورة النهائية.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/201147670788" target="_blank" rel="noopener" class="social-link social-whatsapp" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/_gridmedia_" target="_blank" rel="noopener" class="social-link social-instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61576882616830" target="_blank" rel="noopener" class="social-link social-facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@gridmediaa" target="_blank" rel="noopener" class="social-link social-tiktok" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4 id="footerLinksTitle">روابط سريعة</h4>
+          <ul>
+            <li><a href="portfolio.html" data-ar="معرض أعمالنا 🎬" data-en="Our Portfolio 🎬">معرض أعمالنا 🎬</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#process">مراحل العمل</a></li>
+            <li><a href="#why">لماذا جريد؟</a></li>
+            <li><a href="#cities">انتشارنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4 id="footerServicesTitle">خدماتنا</h4>
+          <ul>
+            <li><a href="#services">الفعاليات والمناسبات</a></li>
+            <li><a href="#services">حفلات التخرج</a></li>
+            <li><a href="#services">المحتوى الإعلاني</a></li>
+            <li><a href="#services">محتوى الشركات</a></li>
+            <li><a href="#services">إنتاج مخصص</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" id="footerCopy">© 2024 جريد ميديا برودكشن. جميع الحقوق محفوظة.</p>
+        <p class="footer-founder" id="footerFounder">المؤسس والرئيس التنفيذي — <strong>سيف الدين مؤمن</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/201147670788" target="_blank" rel="noopener" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">تواصل معنا</span>
+  </a>
+
+  <!-- Floating Social Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://wa.me/201147670788" target="_blank" rel="noopener" class="sidebar-social sidebar-whatsapp" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/_gridmedia_" target="_blank" rel="noopener" class="sidebar-social sidebar-instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61576882616830" target="_blank" rel="noopener" class="sidebar-social sidebar-facebook" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@gridmediaa" target="_blank" rel="noopener" class="sidebar-social sidebar-tiktok" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
