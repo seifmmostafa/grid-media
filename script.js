@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    GRID MEDIA PRODUCTIONS — JAVASCRIPT v2
    With Full Arabic / English Language Toggle
 ============================================ */
@@ -40,21 +40,21 @@ const translations = {
     servicesLabel: 'ماذا نقدم',
     servicesTitle: 'حلول متكاملة في <span class="text-gold">الإنتاج البصري</span>',
     servicesDesc: 'بنقدم حلول تناسب أنواع مختلفة من المشاريع والفعاليات',
-    svc1Title: 'الفعاليات والمناسبات',
-    svc1Desc: 'تغطية وإنتاج محتوى بصري للفعاليات، الحفلات، المؤتمرات، والمناسبات المختلفة، مع التركيز على تفاصيل الحدث وأجوائه وروحه.',
-    svc1Tag: 'تغطية شاملة',
-    svc2Title: 'حفلات التخرج والاحتفالات',
-    svc2Desc: 'إنتاج محتوى بصري يعكس أجواء الاحتفال والطاقة واللحظات المهمة، بداية من التصوير وحتى إنتاج المحتوى النهائي.',
-    svc2Tag: 'لحظات لا تُنسى',
+    svc1Title: 'إنتاج المحتوى البصري المخصص',
+    svc1Desc: 'تنفيذ مشاريع محتوى مخصصة حسب احتياجات العميل، بداية من الفكرة والتخطيط، مرورًا بالتصوير والإنتاج، وحتى التسليم النهائي. كل مشروع له أسلوبه وهويته الخاصة.',
+    svc1Tag: 'من الفكرة للصورة',
+    svc2Title: 'محتوى الشركات والبراندات',
+    svc2Desc: 'صناعة محتوى بصري يساعد الشركات والبراندات على تقديم نفسها وهويتها بصورة واضحة واحترافية تعكس قيمتها.',
+    svc2Tag: 'هوية بصرية',
     svc3Title: 'المحتوى الإعلاني والترويجي',
     svc3Desc: 'إنتاج فيديوهات ومحتوى بصري للشركات، البراندات، الأماكن والمشروعات، بهدف تقديمها بصورة جذابة واحترافية تخدم أهدافها.',
     svc3Tag: 'إعلان احترافي',
-    svc4Title: 'محتوى الشركات والبراندات',
-    svc4Desc: 'صناعة محتوى بصري يساعد الشركات والبراندات على تقديم نفسها وهويتها بصورة واضحة واحترافية تعكس قيمتها.',
-    svc4Tag: 'هوية بصرية',
-    svc5Title: 'إنتاج المحتوى البصري المخصص',
-    svc5Desc: 'تنفيذ مشاريع محتوى مخصصة حسب احتياجات العميل، بداية من الفكرة والتخطيط، مرورًا بالتصوير والإنتاج، وحتى التسليم النهائي.',
-    svc5Tag: 'من الفكرة للصورة',
+    svc4Title: 'حفلات التخرج والاحتفالات',
+    svc4Desc: 'إنتاج محتوى بصري يعكس أجواء الاحتفال والطاقة واللحظات المهمة، بداية من التصوير وحتى إنتاج المحتوى النهائي.',
+    svc4Tag: 'لحظات لا تُنسى',
+    svc5Title: 'الفعاليات والمناسبات',
+    svc5Desc: 'تغطية وإنتاج محتوى بصري للفعاليات، الحفلات، المؤتمرات، والمناسبات المختلفة، مع التركيز على تفاصيل الحدث وأجوائه وروحه.',
+    svc5Tag: 'تغطية شاملة',
 
     // Process
     processLabel: 'كيف نعمل',
@@ -154,21 +154,21 @@ const translations = {
     servicesLabel: 'What We Offer',
     servicesTitle: 'Integrated Solutions in <span class="text-gold">Visual Production</span>',
     servicesDesc: 'We offer solutions that suit various types of projects and events',
-    svc1Title: 'Events & Occasions',
-    svc1Desc: 'Coverage and visual content production for events, concerts, conferences, and various occasions, with focus on the event\'s details, atmosphere, and spirit.',
-    svc1Tag: 'Full Coverage',
-    svc2Title: 'Graduation & Celebrations',
-    svc2Desc: 'Visual content production that reflects the atmosphere, energy, and key moments of celebrations, from filming through to final content delivery.',
-    svc2Tag: 'Unforgettable Moments',
+    svc1Title: 'Custom Visual Content Production',
+    svc1Desc: 'Executing custom content projects based on client needs, from concept and planning, through filming and production, to final delivery. Every project has its own style.',
+    svc1Tag: 'From Idea to Image',
+    svc2Title: 'Corporate & Brand Content',
+    svc2Desc: 'Creating visual content that helps companies and brands present themselves and their identity clearly and professionally, reflecting their value.',
+    svc2Tag: 'Visual Identity',
     svc3Title: 'Advertising & Promotional Content',
     svc3Desc: 'Production of videos and visual content for companies, brands, venues, and projects, aiming to present them attractively and professionally.',
     svc3Tag: 'Professional Advertising',
-    svc4Title: 'Corporate & Brand Content',
-    svc4Desc: 'Creating visual content that helps companies and brands present themselves and their identity clearly and professionally, reflecting their value.',
-    svc4Tag: 'Visual Identity',
-    svc5Title: 'Custom Visual Content Production',
-    svc5Desc: 'Executing custom content projects based on client needs, from concept and planning, through filming and production, to final delivery. Every project has its own style.',
-    svc5Tag: 'From Idea to Image',
+    svc4Title: 'Graduation & Celebrations',
+    svc4Desc: 'Visual content production that reflects the atmosphere, energy, and key moments of celebrations, from filming through to final content delivery.',
+    svc4Tag: 'Unforgettable Moments',
+    svc5Title: 'Events & Occasions',
+    svc5Desc: 'Coverage and visual content production for events, concerts, conferences, and various occasions, with focus on the event\'s details, atmosphere, and spirit.',
+    svc5Tag: 'Full Coverage',
 
     processLabel: 'How We Work',
     processTitle: 'The <span class="text-gold">Seven</span> Phases',
@@ -384,26 +384,59 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
+  if (navbar) {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  }
 }, { passive: true });
 
 // ===== HAMBURGER MENU =====
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navLinks.classList.toggle('open');
-});
+function closeMobileMenu() {
+  if (hamburger) hamburger.classList.remove('active');
+  if (navLinks) navLinks.classList.remove('open');
+  document.body.style.overflow = '';
+  document.documentElement.style.overflow = '';
+}
+
+function toggleMobileMenu() {
+  if (!hamburger || !navLinks) return;
+  const willOpen = !navLinks.classList.contains('open');
+  hamburger.classList.toggle('active', willOpen);
+  navLinks.classList.toggle('open', willOpen);
+  document.body.style.overflow = willOpen ? 'hidden' : '';
+  document.documentElement.style.overflow = willOpen ? 'hidden' : '';
+}
+
+if (hamburger) {
+  hamburger.addEventListener('click', toggleMobileMenu);
+}
+
 document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
   link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navLinks.classList.remove('open');
+    closeMobileMenu();
   });
 });
+
 document.addEventListener('click', (e) => {
-  if (!navbar.contains(e.target)) {
-    hamburger.classList.remove('active');
-    navLinks.classList.remove('open');
+  if (navbar && !navbar.contains(e.target)) {
+    closeMobileMenu();
   }
 });
+
+// ===== STATS CLICKABLE INTERACTION =====
+const statServicesBtn = document.getElementById('statServicesBtn');
+if (statServicesBtn) {
+  statServicesBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const svcSec = document.getElementById('services');
+    if (svcSec) {
+      svcSec.scrollIntoView({ behavior: 'smooth' });
+      document.querySelectorAll('.service-card').forEach(c => {
+        c.classList.add('highlight-pulse');
+        setTimeout(() => c.classList.remove('highlight-pulse'), 1400);
+      });
+    }
+  });
+}
 
 // ===== INTERSECTION OBSERVER =====
 const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };

@@ -343,19 +343,37 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Mobile Hamburger Menu
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('open');
-    });
+  function closeMobileMenu() {
+    if (hamburger) hamburger.classList.remove('active');
+    if (navLinks) navLinks.classList.remove('open');
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+  }
 
+  function toggleMobileMenu() {
+    if (!hamburger || !navLinks) return;
+    const willOpen = !navLinks.classList.contains('open');
+    hamburger.classList.toggle('active', willOpen);
+    navLinks.classList.toggle('open', willOpen);
+    document.body.style.overflow = willOpen ? 'hidden' : '';
+    document.documentElement.style.overflow = willOpen ? 'hidden' : '';
+  }
+
+  if (hamburger) {
+    hamburger.addEventListener('click', toggleMobileMenu);
+  }
+
+  if (navLinks) {
     navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('open');
-      });
+      link.addEventListener('click', closeMobileMenu);
     });
   }
+
+  document.addEventListener('click', (e) => {
+    if (navbar && !navbar.contains(e.target)) {
+      closeMobileMenu();
+    }
+  });
 
   // Sticky Navbar on Scroll
   window.addEventListener('scroll', () => {
